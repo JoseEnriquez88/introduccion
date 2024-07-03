@@ -30,7 +30,9 @@ int main()
   cin >> d;
 
   resultado = (a + b) / (c + d);
-  
+
   cout.precision(2);
   cout << "\n\nEl resultado es: " << resultado << endl;
+
+  return 0;
 };

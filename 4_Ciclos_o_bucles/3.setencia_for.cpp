@@ -1,0 +1,16 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+  int i;
+
+  for (i = 10; i >= i; i--)
+  {
+    cout << i << endl;
+  }
+
+  getch();
+  return 0;
+}

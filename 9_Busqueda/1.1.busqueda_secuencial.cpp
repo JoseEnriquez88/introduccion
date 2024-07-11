@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-  int a[] = {3, 4, 2, 1, 5};
+  int arreglo[] = {3, 4, 2, 1, 5};
   int i, dato;
   char band = 'F';
 
@@ -15,7 +15,7 @@ int main()
   {
     while (band == 'F' && i < 5)
     {
-      if (a[i] == dato)
+      if (arreglo[i] == dato)
       {
         band = 'V';
       }

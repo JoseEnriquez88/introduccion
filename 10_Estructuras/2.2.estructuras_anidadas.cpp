@@ -35,7 +35,8 @@ int main()
     cin.getline(empleados[i].dir_empleado.provincia, 20, '\n');
     cout << "Digite su salario: ";
     cin >> empleados[i].salario;
-    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    // cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cin.ignore();
     cout << "\n";
   }
 

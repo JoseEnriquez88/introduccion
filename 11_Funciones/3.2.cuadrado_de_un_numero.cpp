@@ -2,11 +2,11 @@
 //  La función deberá ser capaz de elevar al cuadrado números flotantes.
 
 #include <iostream>
-#include <conio.h>
+#include <stdlib.h>
 using namespace std;
 
 void pedirDatos();
-void alCuadrado(float n);
+void alCuadrado(float numero);
 
 float numero;
 
@@ -15,7 +15,8 @@ int main()
 	pedirDatos();
 	alCuadrado(numero);
 
-	getch();
+	cout << endl;
+	system("pause");
 	return 0;
 }
 
@@ -25,7 +26,7 @@ void pedirDatos()
 	cin >> numero;
 }
 
-void alCuadrado(float n)
+void alCuadrado(float numero)
 {
 	float cuadrado = 0;
 

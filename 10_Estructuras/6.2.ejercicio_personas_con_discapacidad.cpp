@@ -24,7 +24,6 @@ int main()
 
 	cout << "Digite el numero de personas: ";
 	cin >> n_personas;
-	// Rellenar el arreglo de estructuras
 	for (int i = 0; i < n_personas; i++)
 	{
 		fflush(stdin);
@@ -33,35 +32,31 @@ int main()
 		cout << "Discapacidad (1/0)? :";
 		cin >> personas[i].discapacidad;
 
-		// Almacenamos las personas con discapacidad
 		if (personas[i].discapacidad == 1)
 		{
 			strcpy(personasConD[j].nombre, personas[i].nombre);
-			j++; // Es un nuevo arreglo por lo tanto debe iniciar en 0 y aumentar
+			j++;
 		}
-		// Almacenamos las personas sin Discapacidad
 		else
 		{
 			strcpy(personasSinD[k].nombre, personas[i].nombre);
-			k++; // Es un nuevo arreglo por lo tanto debe iniciar en 0 y aumentar
+			k++;
+			cout << "\n";
 		}
-		cout << "\n";
-	}
 
-	// Mostrar las personas con Discapaciadad
-	cout << "\nPersonas con Discapacidad\n";
-	for (int i = 0; i < n_personas; i++)
-	{
-		cout << personasConD[i].nombre << endl;
-	}
-	// Mostrar las personas sin Discapacidad
-	cout << "\nPersonas sin Discapacidad\n";
-	for (int i = 0; i < n_personas; i++)
-	{
-		cout << personasSinD[i].nombre << endl;
-	}
+		cout << "\nPersonas con Discapacidad\n";
+		for (int i = 0; i < n_personas; i++)
+		{
+			cout << personasConD[i].nombre << endl;
+		}
+		cout << "\nPersonas sin Discapacidad\n";
+		for (int i = 0; i < n_personas; i++)
+		{
+			cout << personasSinD[i].nombre << endl;
+		}
 
-	cout << endl;
-	system("pause");
-	return 0;
+		cout << endl;
+		system("pause");
+		return 0;
+	}
 }

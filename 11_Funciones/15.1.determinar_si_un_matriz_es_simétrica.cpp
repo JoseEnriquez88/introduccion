@@ -50,10 +50,8 @@ void comprobarSimetria(int m[][100], int nfilas, int ncol)
 {
 	int cont = 0;
 
-	// Si es cuadrada
 	if (nfilas == ncol)
 	{
-		// y ademas si Aij = Aji
 		for (int i = 0; i < nfilas; i++)
 		{
 			for (int j = 0; j < ncol; j++)

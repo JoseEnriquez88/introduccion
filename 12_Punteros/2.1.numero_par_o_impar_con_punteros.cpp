@@ -10,8 +10,7 @@ int main()
 	int numero, *dir_numero;
 
 	cout << "Digite un numero: ";
-	cin >> numero; // Pedimos el numero al usuario
-
+	cin >> numero;
 	dir_numero = &numero;
 
 	if (*dir_numero % 2 == 0)

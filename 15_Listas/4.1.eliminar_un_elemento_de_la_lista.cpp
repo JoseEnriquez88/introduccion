@@ -172,5 +172,6 @@ void eliminarNodo(Nodo *&lista, int n)
       anterior->siguiente = aux_borrar->siguiente;
       delete aux_borrar;
     }
+  
     }
 };
